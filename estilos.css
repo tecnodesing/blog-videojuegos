@@ -36,11 +36,117 @@
     src: url(fonts/Rampart_One/RampartOne-Regular.ttf);
 }
 
-/*? ******* GENERALES ****** */
+/*! ******* GENERALES ****** */
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'MuseoModerno', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*** Menú sociales ****/
+
+.nav_sociales{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-fondo);
+}
+
+.nav_sociales a{
+    color: var(--color-blanco);
+    opacity: 0.5;
+    font-size: 14px;
+    margin: 0 30px;
+    transition: all 0.5s;
+}
+
+.nav_sociales a:hover{
+    opacity: 1;
+    transform: scale(2);
+}
+
+
+/* Menú principal */
+
+.nav_principal{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.nav_principal img{
+    width: 300px;
+    cursor: pointer;
+}
+
+.nav_principal .input_search{
+    width: 40%;
+    position: relative;
+} 
+
+.nav_principal .input_search input{
+    width: 100%;
+    height: 35px;
+    border-radius: 50px;
+    border: 1px solid var(--color-secundario);
+    color: var(--color-gris-oscuro);
+    font-size: 14px;
+    outline: none;
+    padding: 0 50px 0 30px;
+}
+
+.nav_principal .input_search input::placeholder{
+    letter-spacing: 2px;
+    color: var(--color-gris-claro);
+}
+
+.nav_principal .input_search i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-adicional);
+}
+
+.nav_principal .enlaces a{
+    font-size: 14px;
+    padding: 10px 15px;
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--color-fondo);
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.nav_principal .enlaces a:hover{
+    color: var(--color-blanco);
+}
+
+.nav_principal .enlaces a:nth-child(1):hover{
+    background: var(--color-primario);
+}
+
+.nav_principal .enlaces a:nth-child(2):hover{
+    background: var(--color-secundario);
+}
+
+.nav_principal .enlaces a:nth-child(3):hover{
+    background: var(--color-terciario);
 }
