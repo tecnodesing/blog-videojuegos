@@ -49,6 +49,39 @@ a{
     text-decoration: none;
 }
 
+.btn{
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background: var(--color-primario);
+    color: var(--color-blanco);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn:hover{
+    background: var(--color-primario-oscuro);
+}
+
+.badge{
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 5px 15px;
+    cursor: default;
+    transition: all 0.5s;
+}
+
 /*** Menú sociales ****/
 
 .nav_sociales{
@@ -150,3 +183,44 @@ a{
 .nav_principal .enlaces a:nth-child(3):hover{
     background: var(--color-terciario);
 }
+
+
+/*? ****Header**** */
+
+header{
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 50px;
+}
+
+header .imagen_header{
+    width: 60%;
+    height: 100%;
+    background: url(img/game1.png);
+    background-size: cover;
+    background-position: center;
+    clip-path: circle(90% at 92% 50%);
+    z-index: 2;
+    transition: all 0.5s;
+}
+
+header .content_header{
+    width: 50%;
+}
+
+header .content_header *{
+    margin: 10px 0;
+}
+
+header .content_header h3{
+    font-size: 65px;
+    font-weight: 300;
+}
+
+header .content_header p{
+    font-size: 19px;
+}
+
