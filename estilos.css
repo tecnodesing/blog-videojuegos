@@ -456,3 +456,30 @@ aside nav a{
 aside nav a:hover{
     opacity: 1;
 }
+
+
+/* Galeria de imagenes */
+.gallery{
+    display: flex;
+}
+
+.gallery .column{
+    flex: 30%;
+}
+
+.gallery .column .img-container{
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.gallery .column .img-container:hover img{
+    transform: scale(1.1);
+}
+.gallery .column img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s;
+}
