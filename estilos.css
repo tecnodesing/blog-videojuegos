@@ -45,6 +45,14 @@
     font-family: 'MuseoModerno', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    cursor: url(img/pointer_rosa_neon.png), auto;   
+}
+
 a{
     text-decoration: none;
 }
@@ -68,6 +76,28 @@ a{
 
 .btn:hover{
     background: var(--color-primario-oscuro);
+}
+
+.btn-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: var(--color-terciario);
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: var(--color-blanco);
+    z-index: 1;
+    transition: all 0.5s;
+}
+
+.btn-top:hover{
+    opacity: 1;
+    background: var(--color-adicional);
 }
 
 .badge{
