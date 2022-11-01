@@ -313,13 +313,13 @@ header .content_header p{
 }
 
 .game:hover img{
-    left: 75%;
+    left: 80%;
     height: 400px;
 }
 
 .game .content{
     position: relative;
-    width: 45%;
+    width: 50%;
     left: 20%;
     padding: 20px 20px 20px 40px;
     color: var(--color-blanco);
@@ -334,7 +334,7 @@ header .content_header p{
 
 .game .content h2{
     text-transform: uppercase;
-    font-size: 2.2em;
+    font-size: 2em;
     line-height: 1em;
 }
 
